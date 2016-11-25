@@ -25,7 +25,7 @@ Position Find( List L, ElementType X )
 }
  
 /* 带头结点的插入 */
-/*注意:在插入位置参数P上与课程视频有所不同，课程视频中i是序列位序（从1开始），这里P是链表结点指针，在P之前插入新结点 */
+/*P是链表结点指针，在P之前插入新结点 */
 bool Insert( List L, ElementType X, Position P )
 { /* 这里默认L有头结点 */
     Position tmp, pre;
@@ -47,7 +47,7 @@ bool Insert( List L, ElementType X, Position P )
 }
  
 /* 带头结点的删除 */
-/*注意:在删除位置参数P上与课程视频有所不同，课程视频中i是序列位序（从1开始），这里P是拟删除结点指针 */
+/*P是拟删除结点指针 */
 bool Delete( List L, Position P )
 { /* 这里默认L有头结点 */
     Position tmp, pre;
