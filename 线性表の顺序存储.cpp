@@ -10,10 +10,8 @@ struct LNode {
 List MakeEmpty()
 {
     List L;
- 
     L = (List)malloc(sizeof(struct LNode));
     L->Last = -1;
- 
     return L;
 }
  
@@ -23,7 +21,6 @@ List MakeEmpty()
 Position Find( List L, ElementType X )
 {
     Position i = 0;
- 
     while( i <= L->Last && L->Data[i]!= X )
         i++;
     if ( i > L->Last )  return ERROR; /* 如果没找到，返回错误信息 */

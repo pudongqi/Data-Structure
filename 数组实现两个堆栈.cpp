@@ -18,7 +18,7 @@ void Push( struct DStack *S, ElementType item, int Tag )
 		cout<<"堆栈满"<<endl;
 		return;
 	}
-	if( Tag ==1 )/*对第一个堆栈操作*/
+	if( Tag == 1 )/*对第一个堆栈操作*/
 		S->Data[ ++(S->Top1) ] = item;
 	else		/*对第二个堆栈操作*/
 		S->Data[ --(S->Top2) ] = item;

@@ -31,8 +31,8 @@ bool Insert( List L, ElementType X, Position P )
     Position tmp, pre;
  
     /* 查找P的前一个结点 */        
-    for ( pre=L; pre&&pre->Next!=P; pre=pre->Next ) ;            
-    if ( pre==NULL ) { /* P所指的结点不在L中 */
+    for ( pre=L; pre && pre->Next!=P; pre=pre->Next ) ;            
+    if ( pre == NULL ) { /* P所指的结点不在L中 */
         printf("插入位置参数错误\n");
         return false;
     }
@@ -54,7 +54,7 @@ bool Delete( List L, Position P )
  
     /* 查找P的前一个结点 */        
     for ( pre=L; pre&&pre->Next!=P; pre=pre->Next ) ;            
-    if ( pre==NULL || P==NULL) { /* P所指的结点不在L中 */
+    if ( pre==NULL || P==NULL ) { /* P所指的结点不在L中 */
         printf("删除位置参数错误\n");
         return false;
     }
@@ -65,3 +65,4 @@ bool Delete( List L, Position P )
         return true;
     }
 }
+
