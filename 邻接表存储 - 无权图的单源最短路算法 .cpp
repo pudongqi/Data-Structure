@@ -16,8 +16,11 @@ void Unweighted ( LGraph Graph, int dist[], int path[], Vertex S )
         for ( W=Graph->G[V].FirstEdge; W; W=W->Next ) /* 对V的每个邻接点W->AdjV */
             if ( dist[W->AdjV]==-1 ) { /* 若W->AdjV未被访问过 */
                 dist[W->AdjV] = dist[V]+1; /* W->AdjV到S的距离更新 */
-                path[W->AdjV] = V; /* 将V记录在S到W->AdjV的路径上 */
+                path[W->AdjV] = V; /* 将V记录在S到W->AdjV的路径上 */得到一个方向的路径
                 AddQ(Q, W->AdjV);
             }
     } /* while结束*/
 }
+
+时间复杂度:O(顶点数+边数)‘
+

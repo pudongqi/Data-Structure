@@ -1,5 +1,5 @@
 /* 邻接矩阵存储 - 有权图的单源最短路算法 */
- 
+//不能解决有负边
 Vertex FindMinDist( MGraph Graph, int dist[], int collected[] )
 { /* 返回未被收录顶点中dist最小者 */
     Vertex MinV, V;
