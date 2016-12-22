@@ -64,3 +64,5 @@ bool Delete( List L, Position P )
     L->Last--; /* Last仍指向最后元素 */
     return true;   
 }
+
+
