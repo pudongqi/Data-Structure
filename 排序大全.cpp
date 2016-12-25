@@ -74,6 +74,10 @@ void InsertionSort( ElementType A[], int N )
 然后，取得第二个增量d2<d1重复上述的分组和排序，直至所取的增量di=1，即所有记录放在同一组中进行直接插入排序为止。
 该方法实质上是一种分组插入方法。
 一般取d1=n/2，di+1=di/2。如果结果为偶数，则加1，保证di为奇数。
+
+
+
+希尔(Shell)排序
 void ShellSort( ElementType A[], int N )
 { /* 希尔排序 */
      int D, P, i;

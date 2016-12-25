@@ -1,6 +1,7 @@
 
+
+
  typedef struct TreeNode *HuffmanTree;
- 
  struct TreeNode
  {
  	int Weight;
@@ -24,6 +25,9 @@
  	T = DeleteMin (H);
  	return T;
  }
+
+
+ 
 
 没有度为1的结点
 n个叶子结点的哈夫曼树共有2n-1个结点

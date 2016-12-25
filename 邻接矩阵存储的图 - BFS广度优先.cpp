@@ -3,6 +3,8 @@
 /* IsEdge(Graph, V, W)检查<V, W>是否图Graph中的一条边，即W是否V的邻接点。  */
 /* 此函数根据图的不同类型要做不同的实现，关键取决于对不存在的边的表示方法。*/
 /* 例如对有权图, 如果不存在的边被初始化为INFINITY, 则函数实现如下:         */
+
+
 bool IsEdge( MGraph Graph, Vertex V, Vertex W )
 {
     return Graph->G[V][W]<INFINITY ? true : false;

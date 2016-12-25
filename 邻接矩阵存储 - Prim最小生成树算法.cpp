@@ -1,5 +1,7 @@
 /* 邻接矩阵存储 - Prim最小生成树算法 */
 适用于稠密图
+
+
 Vertex FindMinDist( MGraph Graph, WeightType dist[] )
 { /* 返回未被收录顶点中dist最小者 */
     Vertex MinV, V;
